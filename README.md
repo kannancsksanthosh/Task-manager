@@ -24,13 +24,13 @@ To get started with this project:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/kannancsksanthosh/yTask-manager
+    git clone https://github.com/kannancsksanthosh/Task-manager
     ```
 
 2. **Navigate to the Project Directory:**
 
     ```bash
-    cd your-repository
+    cd Task-manager
     ```
 
 3. **Open the Project in a Browser:**
