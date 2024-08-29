@@ -1,0 +1,110 @@
+/* Apply the Poppins font to the entire body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0; /* Light gray background */
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.private-container {
+    background: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+button {
+    background-color: #333; /* Dark button color */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #222;
+}
+
+#gender-selection {
+    margin-bottom: 20px;
+}
+
+#suggestions {
+    margin-top: 20px;
+}
+
+#suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#suggestions-list li {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#suggestions-list li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar Section */
+#calendar-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#calendar-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#task-date {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #task-date {
+        width: 100%;
+    }
+}

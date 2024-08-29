@@ -1,0 +1,180 @@
+/* Apply the Poppins font to the entire body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0; /* Light gray background */
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    background: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+.task-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    padding: 12px;
+    width: calc(100% - 100px);
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#add-task {
+    background-color: #333; /* Dark button color */
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#add-task:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#add-task:active {
+    background-color: #222;
+}
+
+.header-controls {
+    margin-top: 20px;
+}
+
+.header-controls button {
+    background-color: #333; /* Dark button color */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px 10px 0 10px; /* Margin around buttons */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header-controls button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.header-controls button:active {
+    background-color: #222;
+}
+
+#theme-switcher {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#theme-switcher:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#theme-switcher:active {
+    background-color: #222;
+}
+
+#calendar-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#calendar-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#task-date {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .task-input-group {
+        flex-direction: column;
+    }
+
+    #task-input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #add-task {
+        width: 100%;
+    }
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background: #333;
+    color: #ddd;
+}
+
+body.dark-theme .container {
+    background: #444;
+}
+
+body.dark-theme #task-list li {
+    background: #555;
+}
+
+body.dark-theme #task-input, 
+body.dark-theme #add-task,
+body.dark-theme .header-controls button {
+    background-color: #666;
+    color: #ddd;
+    border: 1px solid #888;
+}
+
+body.dark-theme #task-list li:hover {
+    background: #666;
+}

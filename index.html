@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="/Task manager/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <div class="task-input-group">
+                <input type="text" id="task-input" placeholder="Enter a task" />
+                <button id="add-task">Add</button>
+            </div>
+            <div class="header-controls">
+                <button id="suggest-task">Suggest Task</button>
+                <a href="private-tasks.html" id="go-private-tasks">Private Tasks</a>
+            </div>
+            <button id="theme-switcher" onclick="toggleTheme()">🌙</button>
+        </header>
+        <div id="calendar-section">
+            <h2>Select a Date for Your Task</h2>
+            <input type="date" id="task-date">
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="/Task manager/scripts/main.js"></script>
+</body>
+</html>
